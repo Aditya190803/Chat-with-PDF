@@ -51,7 +51,7 @@ def get_conversational_chain():
     return chain
 
 def get_gemini_fallback_chain():
-    model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.4)
+    model = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0.4)
     memory = ConversationBufferMemory()
     conversation = ConversationChain(
         llm=model,
